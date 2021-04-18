@@ -212,7 +212,13 @@ void async function() {
       'C-Foo': 'customer',
     },
     body: {
-      name: 'ctx',
+      account: 'ctx',
+      password: '******',
+      list: JSON.stringify([
+        {
+          a: 1,
+        },
+      ])
     },
   })
 

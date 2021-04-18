@@ -5,7 +5,7 @@ const app = createServer((req, res) => {
   let body = []
 
   req
-    .on('data', chunk => body.push(chunk.toString()))
+    .on('data', chunk => body.push(chunk))
     .on('end', () => {
       body = Buffer.concat(body).toString()
       console.log(`body: ${ body }`)
