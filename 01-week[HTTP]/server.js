@@ -1,5 +1,5 @@
 const { createServer } = require('http')
-const { argv: [, , port = 8080 ] } = process
+const { argv: [, , port = 3000 ] } = process
 
 const app = createServer((req, res) => {
   let body = []
